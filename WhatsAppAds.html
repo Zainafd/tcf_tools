@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechCyberForce</title>
+<style>
+/* CSS Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header p {
+    font-size: 5px;
+    text-align: right;
+    margin-right: 13%;
+}
+
+.header {
+    background-image:url('/storage/emulated/0/Best Site Practice /IMG-20240228-WA0111.jpg') ;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.group-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.group-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.group-link a:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1 id="color-changing-text">WELCOME TO TECH CYBER FORCE</h1>
+    <p text-align="right" style="color:red">FOUNDER PRINCE ZAIN</p>
+</div>
+
+<div class="container">
+    <h3>TECH CYBER FORCE</h3>
+    <p style="color:#007bff">This Group is For Sharing Premium Courses For Free & Premium Tricks For Free , No Fee Required Just Do React and Enjoy For Free </p>
+    
+    
+    <h5>CLICK BELOW LINK TO JOIN US ⤵️</h5>
+    
+    <div class="group-link">
+        <a href="https://chat.whatsapp.com/HxU97DJsLG6GrOIik0B01P" target="_blank">Join Our WhatsApp Group</a>
+    </div>
+</div>
+
+<script>
+// JavaScript functionality
+const colors = ['red', 'green', 'blue','Yellow'];
+let currentColorIndex = 0;
+
+function changeColor() {
+    document.getElementById('color-changing-text').style.color = colors[currentColorIndex];
+    
+    currentColorIndex = (currentColorIndex + 1) % colors.length; // Loop through colors
+}
+
+setInterval(changeColor,200); // Change color every second (1000ms)
+</script>
+
+</body>
+</html>
